@@ -79,17 +79,12 @@ public: Found(string type, int price) : type(type), price(price) {}
 class House
 {
 private:
-	string report;
 	vector<Wall>walls;
 	vector<Window>windows;
 	vector<Door>doors;
 	vector<Roof>roofs;
 	vector<Found>founds;
 public:
-	void AddReport(string text)
-	{
-		report += text;
-	}
 	void AddWall(int price)
 	{
 		walls.push_back(Wall(price));
